@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.5)
 
 project(ventilator-gui LANGUAGES CXX)
 
+add_subdirectory(external)
+
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 set(CMAKE_AUTOUIC ON)
@@ -28,14 +30,14 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 if(ANDROID)
   add_library(ventilator-gui SHARED
-    main.cpp
+    main.cc
     mainwindow.cc
     mainwindow.h
     mainwindow.ui
   )
 else()
   add_executable(ventilator-gui
-    main.cpp
+    main.cc
     mainwindow.cc
     mainwindow.h
     mainwindow.ui
