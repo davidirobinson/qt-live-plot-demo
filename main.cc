@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
         // This is a shitty hack.
         // Need to determine if handling data outside the main Qt class is appropriate.
-        std::this_thread::sleep_for(seconds(1));
+        std::this_thread::sleep_for(milliseconds(100));
 
         auto start = steady_clock::now();
 

@@ -2,10 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QTimer>
 #include <qcustomplot.h>
-#include <iostream>
-#include <vector>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -26,7 +23,6 @@ private:
     void setupGraphs();
 
     Ui::MainWindow *ui_;
-    QTimer dataTimer;
 };
 
 #endif // MAINWINDOW_H
