@@ -23,4 +23,4 @@ add_executable(ventilator-gui
     qcustomplot.h
 )
 
-target_link_libraries(ventilator-gui PRIVATE ${qtlibs})
+target_link_libraries(ventilator-gui PRIVATE ${qtlibs} pthread)

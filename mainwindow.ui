@@ -7,33 +7,20 @@
     <x>0</x>
     <y>0</y>
     <width>955</width>
-    <height>571</height>
+    <height>507</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="start_button">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>89</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Start</string>
-    </property>
-   </widget>
    <widget class="QCustomPlot" name="graph_1" native="true">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>60</y>
+      <y>20</y>
       <width>911</width>
-      <height>141</height>
+      <height>221</height>
      </rect>
     </property>
    </widget>
@@ -41,19 +28,9 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>220</y>
+      <y>250</y>
       <width>911</width>
-      <height>141</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QCustomPlot" name="graph_3" native="true">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>380</y>
-      <width>911</width>
-      <height>141</height>
+      <height>201</height>
      </rect>
     </property>
    </widget>

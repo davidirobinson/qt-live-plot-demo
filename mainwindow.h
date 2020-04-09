@@ -2,6 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QTimer>
+#include <qcustomplot.h>
+#include <iostream>
+#include <vector>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,8 +19,14 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    void updateGraph(double time_s, double data, unsigned graph_idx, unsigned plot_idx = 0);
+
 private:
-    Ui::MainWindow *ui;
+    void setLabels(QCustomPlot *plot, QString title, QString axis);
+    void setupGraphs();
+
+    Ui::MainWindow *ui_;
+    QTimer dataTimer;
 };
 
 #endif // MAINWINDOW_H
