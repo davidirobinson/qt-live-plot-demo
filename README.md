@@ -1,5 +1,6 @@
 # Qt Live Plot Demo
 
+![qt-live-plot-demo](https://drive.google.com/uc?export=download&id=1WQwwrLjZ5_V_APxpjhTAem20A4u-0f2J)
 
 ## Usage
 
