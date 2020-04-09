@@ -7,14 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>955</width>
-    <height>534</height>
+    <height>571</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="start_button">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -25,6 +25,36 @@
     </property>
     <property name="text">
      <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="graph_1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>911</width>
+      <height>141</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="graph_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>911</width>
+      <height>141</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="graph_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>380</y>
+      <width>911</width>
+      <height>141</height>
+     </rect>
     </property>
    </widget>
   </widget>
@@ -40,6 +70,14 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
