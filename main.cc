@@ -11,7 +11,6 @@ int main(int argc, char *argv[])
 {
     static bool done_ = false;
 
-
     QApplication a(argc, argv);
     MainWindow w;
 
@@ -21,7 +20,7 @@ int main(int argc, char *argv[])
     std::thread data_thread([&w]() {
         using namespace std::chrono;
 
-        // This is a shitty hack.
+        // Delay avoids accessing resources in MainWindow before they are initialized
         // Need to determine if handling data outside the main Qt class is appropriate.
         std::this_thread::sleep_for(milliseconds(100));
 

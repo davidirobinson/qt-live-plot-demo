@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(ventilator-gui LANGUAGES CXX)
+project(qt-live-plot-demo LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -14,7 +14,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt5 COMPONENTS Widgets Core Gui PrintSupport REQUIRED)
 set(qtlibs Qt5::Widgets Qt5::Core Qt5::Gui Qt5::PrintSupport)
 
-add_executable(ventilator-gui
+add_executable(qt-live-plot-demo
     main.cc
     mainwindow.cc
     mainwindow.h
@@ -23,4 +23,4 @@ add_executable(ventilator-gui
     qcustomplot.h
 )
 
-target_link_libraries(ventilator-gui PRIVATE ${qtlibs} pthread)
+target_link_libraries(qt-live-plot-demo PRIVATE ${qtlibs} pthread)

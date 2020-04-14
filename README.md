@@ -24,5 +24,5 @@ cmake .. && make -j<#-cores>
 
 ```
 cd build
-./ventilator-gui
+./qt-live-plot-demo
 ```
